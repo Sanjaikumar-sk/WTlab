@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="icon" href="./assets/Images/favicon.png" type="image/jpg">
+    <link rel="stylesheet" href="./assets/Styles/styles.css">
+
+</head>
+
+<body>
+    <main>
+        <div id="container">
+            <!-- PU LOGO -->
+            <span class="pulogo">
+                <img src="./assets/Images/pulogo.png" alt="pu logo" id="pulogoid">
+                <label for="pulogoid">Pondicherry University</label>
+            </span>
+
+            <!-- Title -->
+            <span class="title">
+                <h3 class="title">Create Your University Account</h3>
+            </span>
+            <form action="submit.php" method="get" enctype="multipart/form-data">
+                <div class="name">
+                    <input type="text" name="name"  required>
+                    <label class="placeholderlable" for="name">Name</label>
+                </div>
+                <div class="regno">
+                    <input type="text" name="regno" required>
+                    <label class="placeholderlable" for="regno">Register Number</label>
+                </div>
+                <div class="fname">
+                    <input type="text" name="fname" required>
+                    <label  class="placeholderlable" for="fname">Father Name</label>
+                </div>
+                <div class="mname">
+                    <input type="text" name="mname" required>
+                    <label  class="placeholderlable" for="mname">Mother Name</label>
+                </div>
+                <div class="dob">
+                    <input type="date" name="dob" placeholder="none" value="25-03-2002" required>
+                    <label class="placeholderlableactive" for="dob">Date of Birth</label>
+                </div>
+                <div class="email">
+                    <input type="email" name="email" id="emailinput" required>
+                    <label class="placeholderlable" id="emaillabel" for="email">Email</label>
+                </div>
+                <div class="phoneclass">
+                    <input type="tel" name="phone" id="phone" required>
+                    <label class="placeholderlable" id="phonelabid" for="phone">Phone Number</label>
+                </div>
+                <div class="course">
+                    <select name="courselist" class="courselist">
+                        <option value="bsc">Bachelor of Computer Science</option>
+                        <option value="msc">Master of Computer Science</option>
+                        <option value="mca">Master of Computer Applications</option>
+                        <option value="mtechcs">Master of Technology in Computer Science</option>
+                        <option value="mtechnis">Master of Technology in Networks and Information Security</option>
+                    </select>
+                    <label class="placeholderlableactive" for="courselist">Select the Course</label>
+                </div>
+                
+                <div class="photoupload">
+                    <input type="file" id="img-btn" accept="image/*" hidden />
+                    <label class="puloadlable" for="img-btn">Upload Photo</label>
+                    <span id="img-chosen">No file chosen</span>
+                </div>
+                <br>
+                <div class="resumeupload">
+                    <input type="file" id="res-btn" accept="application/pdf" hidden />
+                    <label class="ruloadlable" for="res-btn">Upload Resume</label>
+                    <span id="res-chosen">No file chosen</span>
+                </div>
+                <br>
+                <input type="submit" value="Create Account">
+            </form>
+        </div>
+    </main>
+    <script src="./assets/Scripts/app.js"></script>
+</body>
+
+</html>

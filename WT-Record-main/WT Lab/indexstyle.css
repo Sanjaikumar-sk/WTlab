@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+/*Background */
+  html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: rgba(123, 204, 202, 0.66);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+
+
+#logo {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 5%;
+
+
+}
+/* nav */
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 13%;
+  background: #d52358;
+
+    font-family: 'Source Code Pro', monospace;
+  
+
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 3rem;
+  margin-top: 30px;
+  color: #351c1b;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 1rem;
+  }
+}
+
+
+.nav-list a {
+  display: absolute;
+  font-size: 1.7rem;
+color:rgb(255, 255, 255);
+  padding: 1rem;
+}
+
+.nav-list a:hover {
+  background: rgba(173, 238, 89, 0.57);
+;
+  border-radius: 30%;
+  width: auto;
+  height: 1rem;
+}
+ul {
+  list-style: none;
+}
+
+
+
+.welcome-section {
+  display: flex;
+  font-family:Poppins;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: #277dff;
+  font-size:1.5em;
+}
+.welcome-section > p {
+  font-size: 27px;
+  font-family:Source Code Pro;
+  font-weight: 200;
+  color: purple;
+}
+
+
+
+/*---------------------------------------------------------------------------------*/
+
+
+.about-section {
+  text-align: center;
+
+}
+
+
+h2{
+   font-size: 2rem;
+  font-family:'Source Code Pro'
+}
+
+
+.about-section-1{
+  color: rgb(91, 105, 231);
+}
+.about-section-2{
+  color: rgb(91, 105, 231);
+}
+
+.about-section-3{
+  color: rgb(91, 105, 231);
+}
+
+
+
+
+
+/* Contact section */
+
+.contact-section {
+  text-align: center;
+padding-top: 20em;
+
+}
+
+
+h2{
+   font-size: 2rem;
+  font-family:'Source Code Pro';
+
+}
+#contact-title{
+  color: #ff0000;
+}
+a{
+  padding: 20px;
+  color: purple;
+}
+#icon{
+  display: flex;
+}
+
+#profile-links
+{
+  padding: 20px;
+}
+a:hover{
+  color:azure;
+}
+/* Footer */
+
+footer {
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  color:#351c1b;
+  font-size: 30px;
+  font-family: Product Sans;
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+/* WTLab Section */
+#wtlab {
+  margin: 5em auto;
+  padding: 2em;
+  background-color: #5db94f; /* Matching background color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 50%;
+  margin-bottom: -200px;
+}
+
+#wtlab h1 {
+  font-size: 2.5rem;
+  font-family: 'Source Code Pro';
+  text-align: center;
+  margin-bottom: 1em;
+  color: #ee642a; /* Yellow color for the heading */
+}
+
+#wtlab ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+#wtlab a {
+  color: #ffeb3b; /* Yellow color for the links */
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+#wtlab a:hover {
+  color: #ffffff; /* Hover color */
+  text-decoration: underline;
+  
+}
+
+/* Background color transition on hover */
+#wtlab:hover {
+  background-color: #4264af; /* Hover background color */
+}

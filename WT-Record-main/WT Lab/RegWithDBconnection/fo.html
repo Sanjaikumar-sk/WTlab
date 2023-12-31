@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+  .input-container {
+    position: relative;
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-bottom: 2px solid red;
+    transition: border-color 0.3s; /* Add a smooth transition effect for the bottom border */
+    outline: none; /* Remove the outline that appears on focus */
+  }
+
+  input[type=text]:focus {
+    border-bottom: 2px solid blue; /* Change the bottom border color to blue when focused */
+  }
+
+  .placeholder-label {
+    position: absolute;
+    pointer-events: none;
+    top: 18px;
+    left: 10px;
+    transition: top 0.3s, font-size 0.3s;
+    font-size: 16px;
+  }
+
+  input[type=text]:focus + .placeholder-label, input[type=text]:valid + .placeholder-label {
+    top: 8px;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Input fields with bottom border</h2>
+
+<form>
+  <div class="input-container">
+    <input type="text" id="fname" name="fname" required>
+    <label for="fname" class="placeholder-label">First Name</label>
+  </div>
+  <div class="input-container">
+    <input type="text" id="lname" name="lname" required>
+    <label for="lname" class="placeholder-label">Last Name</label>
+  </div>
+</form>
+
+</body>
+</html>

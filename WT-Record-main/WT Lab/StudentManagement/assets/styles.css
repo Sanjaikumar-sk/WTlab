@@ -1,0 +1,38 @@
+
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling for the body */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Container styling */
+  .container {
+    
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styles */
+  h1, h2 {
+    color: #0066cc;
+  }
+  
+  /* Paragraph styles */
+  p {
+    margin-bottom: 15px;
+  }
+  .pulogo{
+    width: 100px;
+  }
